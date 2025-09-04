@@ -18,6 +18,8 @@
   --main-font: 'Gabarito', sans-serif;
 
   --padding-sides: 50px;
+
+  --border-radius: 10px;
 }
 
 body {
