@@ -42,7 +42,15 @@ import Navbar from './components/Navbar.vue';
 </template>
 
 <style scoped>
-header {
+header,
+main {
   padding: 50px var(--padding-sides);
+}
+
+#love {
+  background-color: var(--color-pink);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  width: 50%;
 }
 </style>
