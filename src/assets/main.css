@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Lonely Cake';
+  src: local('Lonely Cake') url('/fonts/lonely-cake.ttf') format('ttf'),
+    url('/fonts/lonely-cake.woff') format('woff'),
+    url('/fonts/lonely-cake.woff2') format('woff2');
+}
+
+:root {
+  --color-yellow: #ffe99a;
+  --color-pink: #ff9898;
+  --color-white: #ffffff;
+  --color-black: #333333;
+
+  --base-font-size: 16px;
+
+  --special-font: 'Lonely Cake', sans-serif;
+  --main-font: 'Gabarito', sans-serif;
+
+  --padding-sides: 50px;
+}
+
+body {
+  min-height: 100dvh;
+  color: var(--color-black);
+  background: var(--color-yellow);
+  font-family: var(--main-font);
+  font-size: var(--base-font-size);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--special-font);
+  font-weight: 400;
+}
+
+.grid {
+  display: grid;
+}
+.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
